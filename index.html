@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo - Reto 3</title>
+    
+    <!-- Enlace a Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #006666;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        /* Espacio entre el ícono y el texto del menú */
+        .navbar a i {
+            margin-right: 8px;
+        }
+        /* Cambio de color al pasar el mouse */
+        .navbar a:hover {
+            background-color: #ffcc00;
+            color: #000;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .hero {
+            background-image: url("img/imagen 1.png"); /* Reemplaza con la URL de tu imagen */
+            background-size: cover; /* Asegura que la imagen cubra toda la sección */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            color: white;
+            height: 100vh; /* Ocupa el 100% del viewport */
+            padding: 50px 20px;
+            text-align: center;
+            display: flex; /* Flexbox para centrar contenido */
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center; /* Centra el contenido verticalmente */
+            margin: 0; /* Elimina cualquier margen */
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+        .screenshot {
+            margin: 20px auto;
+            max-width: 80%;
+            border: 2px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #006666;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            .screenshot {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/LogoVG.png" alt="Logo" width="150" height="70"> <!-- Reemplaza con la ruta de tu logo -->
+        </div>
+        <div class="navbar">
+            <a href="#"><img src="img/icono 1.png" alt="Inicio" width="20" height="20" style="margin-right: 8px;">Inicio</a>
+            <a href="#"><img src="img/icono 2.png" alt="Servicios" width="20" height="20" style="margin-right: 8px;">Servicios</a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/4906/4906519.png" alt="Nosotros" width="20" height="20" style="margin-right: 8px;">Nosotros</a>
+            <a href="#"><img src="https://img.icons8.com/win10/512/FFFFFF/contacts.png" alt="Contacto" width="20" height="20" style="margin-right: 8px;">Contacto</a>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <h1>Ustedes pueden</h1>
+    </div>
+</body>
+</html>
